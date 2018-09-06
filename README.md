@@ -4,16 +4,15 @@
 
 This repository is following the follwoing Python Packaging structure:
 
-https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure
-
+https://pytest.readthedocs.io/en/reorganize-docs/new-docs/user/directory_structure.html
 
 ```
-├─ src
-│  └─ packagename
-│     ├─ __init__.py
-│     └─ ...
+├─ packagename
+│  ├─ __init__.py
+│  └─ ...
 ├─ tests
 │  └─ ...
+├─ tasks.py
 └─ setup.py
 ```
 
