@@ -49,6 +49,7 @@ Available tasks:
 
  - Docker files and kubernetes tooling
  - Cython optimisation of performance critical code
+    - https://docs.python-guide.org/scenarios/speed/
  - Profiling tooling
 
 # Resources
