@@ -55,5 +55,6 @@ Available tasks:
 # Resources
 
  - https://docs.python-guide.org/
+    - https://docs.python-guide.org/intro/learning/
  - http://howtopython.org/en/latest/
  - https://github.com/kennethreitz (Author of `requests` module)
