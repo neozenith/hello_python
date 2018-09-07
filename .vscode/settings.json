@@ -1,6 +1,14 @@
 {
-    "python.pythonPath": "C:\\Users\\jpeak\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "editor.tabSize": 4
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestEnabled": true,
+    "editor.renderWhitespace": "all",
+    "[python]": {
+        "editor.rulers": [
+            72, 79
+        ],
+        "editor.tabSize": 4,
+    }
 }

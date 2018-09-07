@@ -44,3 +44,15 @@ Available tasks:
   test       Run pytest tooling
 
 ```
+
+# TODO
+
+ - Docker files and kubernetes tooling
+ - Cython optimisation of performance critical code
+ - Profiling tooling
+
+# Resources
+
+ - https://docs.python-guide.org/
+ - http://howtopython.org/en/latest/
+ - https://github.com/kennethreitz (Author of `requests` module)

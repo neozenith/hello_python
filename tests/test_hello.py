@@ -1,5 +1,5 @@
 """
-    author: Josh Peak (josh.peak@mining.komatsu)
+    author: Josh Peak
     description: Hello Greeting Unit test
 """
 from greeting import hello
