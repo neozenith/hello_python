@@ -2,6 +2,8 @@
 
 ## Getting Started
 
+This project uses [VS Code](https://code.visualstudio.com/download) and the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) which you can setup using their [Python Setup Tutorial](https://code.visualstudio.com/docs/languages/python)
+
 This repository is following the below Python Packaging structure:
 
 https://pytest.readthedocs.io/en/reorganize-docs/new-docs/user/directory_structure.html
