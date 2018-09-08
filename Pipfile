@@ -8,6 +8,7 @@ invoke = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-xdist = "*"
+"autopep8" = "*"
 
 [dev-packages]
 

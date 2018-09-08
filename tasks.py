@@ -7,13 +7,25 @@ from invoke import task
 # TODO: Implement Watch tasks
 # https://github.com/gorakhargosh/watchdog
 
+
 @task
 def lint(context):
     """
         This task is available from CLI but normal development should leverage lint in VS Code.
         See More https://code.visualstudio.com/docs/python/linting
     """
+    context.run(" ".join([
+        "autopep8",
+        "--recursive",
+        "--jobs 0",
+        "--in-place",
+        "--aggressive",
+        "-v",
+        "greeting",
+        "tests"
+        ]))
     context.run("pylint greeting tests/*.py")
+
 
 @task
 def test(context):
@@ -22,10 +34,12 @@ def test(context):
     """
     context.run("python -m pytest")
 
+
 @task
 def cov(context):
     """see also: coverage"""
     coverage(context)
+
 
 @task
 def coverage(context):
@@ -34,7 +48,13 @@ def coverage(context):
         NOTE: must use form python -m pytest to include SRC_ROOT in
         sys.path so local module resolves for testing and not site-packages
     """
-    context.run("python -m pytest --cov=greeting --cov-branch --cov-fail-under=75")
+    context.run(" ".join([
+        "python -m pytest",
+        "--cov=greeting",
+        "--cov-branch",
+        "--cov-fail-under=75"
+    ]))
+
 
 @task
 def covwatch(context):
@@ -43,4 +63,9 @@ def covwatch(context):
         NOTE: must use form python -m pytest to include SRC_ROOT in
         sys.path so local module resolves for testing and not site-packages
     """
-    context.run("python -m pytest --cov=greeting --cov-branch --cov-fail-under=75")
+    context.run(" ".join([
+        "python -m pytest",
+        "--cov=greeting",
+        "--cov-branch",
+        "--cov-fail-under=75"
+    ]))

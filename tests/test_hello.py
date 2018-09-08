@@ -7,6 +7,7 @@ from greeting import hello
 # TODO: Investigate this further https://hypothesis.readthedocs.io/en/latest/
 # It uses property based testing which could be useful
 
+
 class TestGreeting():
 
     def test_greeting_failure(self):

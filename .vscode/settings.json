@@ -7,8 +7,15 @@
     "editor.renderWhitespace": "all",
     "[python]": {
         "editor.rulers": [
-            72, 79
+            72,
+            79
         ],
         "editor.tabSize": 4,
-    }
+    },
+    "editor.formatOnSave": true,
+    "python.formatting.autopep8Args": [
+        "--in-place",
+        "--jobs 0",
+        "--aggressive"
+    ]
 }
