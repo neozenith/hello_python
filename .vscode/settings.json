@@ -14,8 +14,6 @@
     },
     "editor.formatOnSave": true,
     "python.formatting.autopep8Args": [
-        "--in-place",
-        "--jobs 0",
         "--aggressive"
     ]
 }

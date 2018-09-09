@@ -23,8 +23,8 @@ def lint(context):
         "-v",
         "greeting",
         "tests"
-        ]))
-    context.run("pylint greeting tests/*.py")
+    ]))
+    context.run("pylint greeting")
 
 
 @task
