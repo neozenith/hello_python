@@ -4,9 +4,6 @@
 """
 from invoke import task
 
-# TODO: Implement Watch tasks
-# https://github.com/gorakhargosh/watchdog
-
 
 @task
 def lint(context):
@@ -64,9 +61,12 @@ def covwatch(context):
         NOTE: must use form python -m pytest to include SRC_ROOT in
         sys.path so local module resolves for testing and not site-packages
     """
+    # TODO: Implement Watch tasks
+    # https://github.com/gorakhargosh/watchdog
     context.run(" ".join([
         "python -m pytest",
         "--cov=greeting",
+        "--cov-report html",
         "--cov-branch",
         "--cov-fail-under=75"
     ]))
