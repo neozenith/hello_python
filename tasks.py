@@ -51,6 +51,7 @@ def coverage(context):
     context.run(" ".join([
         "python -m pytest",
         "--cov=greeting",
+        "--cov-report html",
         "--cov-branch",
         "--cov-fail-under=75"
     ]))
